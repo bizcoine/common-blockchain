@@ -4,6 +4,8 @@
 
 A standard specification for comprehensive bitcoin block explorers.
 
+For the mocha testing kit that previously resided in this module, please see [https://github.com/dcousens/cb-tester](https://github.com/dcousens/cb-tester).
+
 
 ## API Specification
 
