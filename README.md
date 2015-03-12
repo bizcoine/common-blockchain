@@ -9,8 +9,6 @@ For the mocha testing kit that previously resided in this module, please see [ht
 
 ## API Specification
 
-The following API is what is tested by this module.
-
 Any bitcoin value is to be represented as a [satoshi](https://bitcoin.stackexchange.com/questions/114/what-is-a-satoshi), that is, the smallest fraction of a Bitcoin that can currently be sent: 0.00000001 BTC.
 To convert between BTC and satoshis, see the [proper money handling page on the Bitcoin wiki](https://en.bitcoin.it/wiki/Proper_Money_Handling_(JSON-RPC))
 
