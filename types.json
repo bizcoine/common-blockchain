@@ -6,24 +6,28 @@
       "totalReceived": "Number",
       "txCount": "Number"
     },
-    "transactions": [{
-      "blockHeight": "Number",
-      "blockId": "String",
-      "txHex": "String",
-      "txId": "String"
-    }],
-    "unspents": [{
-      "address": "String",
-      "confirmations": "Number",
-      "txId": "String",
-      "value": "Number",
-      "vout": "Number"
-    }]
+    "transactions": [
+      {
+        "blockHeight": "?Number",
+        "blockId": "?String",
+        "txHex": "String",
+        "txId": "String"
+      }
+    ],
+    "unspents": [
+      {
+        "address": "String",
+        "confirmations": "Number",
+        "txId": "String",
+        "value": "Number",
+        "vout": "Number"
+      }
+    ]
   },
   "blocks": {
     "get": {
-      "blockId": "String",
-      "blockHex": "String"
+      "blockHex": "String",
+      "blockId": "String"
     },
     "latest": {
       "blockHeight": "Number",
@@ -51,17 +55,21 @@
   },
   "transactions": {
     "get": {
+      "blockHeight": "?Number",
+      "blockId": "?String",
       "txHex": "String",
       "txId": "String"
     },
-    "latest": [{
-      "txHex": "String",
-      "txId": "String"
-    }],
+    "latest": [
+      {
+        "txHex": "String",
+        "txId": "String"
+      }
+    ],
     "propagate": "String",
     "summary": {
-      "blockHeight": "Number",
-      "blockId": "String",
+      "blockHeight": "?Number",
+      "blockId": "?String",
       "nInputs": "Number",
       "nOutputs": "Number",
       "totalInputValue": "Number",
