@@ -30,28 +30,18 @@
       "blockId": "String"
     },
     "latest": {
-      "blockHeight": "Number",
-      "blockId": "String",
-      "blockSize": "Number",
-      "merkleRootHash": "String",
-      "nonce": "Number",
-      "prevBlockId": "String",
-      "timestamp": "Number",
-      "txCount": "Number",
-      "version": "Number"
+      "blockHex": "String",
+      "blockId": "String"
     },
-    "propagate": "String",
-    "summary": {
-      "blockHeight": "Number",
-      "blockId": "String",
-      "blockSize": "Number",
-      "merkleRootHash": "String",
-      "nonce": "Number",
-      "prevBlockId": "String",
-      "timestamp": "Number",
-      "txCount": "Number",
-      "version": "Number"
-    }
+    "propagate": {},
+    "transactions": [
+      {
+        "blockHeight": "Number",
+        "blockId": "String",
+        "txHex": "String",
+        "txId": "String"
+      }
+    ]
   },
   "transactions": {
     "get": {
