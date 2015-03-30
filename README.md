@@ -179,7 +179,7 @@ Subjective to the node.
 
 #### Transactions.Outputs
 
-**Parameters:** Array of `{ txId: "String", vout: "Number" }`
+**Parameters:** Array of `{ txId, vout }`
 
 Idempotent.
 
