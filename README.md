@@ -82,6 +82,65 @@ Subjective to the node.
 ```
 
 
+### Blocks
+
+#### Blocks.Get
+
+**Parameters:** Array of block ids
+
+Idempotent.
+
+``` javascript
+[
+  {
+    "blockHex": "020000003bef0d0b88737698572aa5c78 ...",
+    "blockId": "00000000000000001b701ecd0cf2b7a7742a320e9a06a506227ee345b5735d13"
+  }
+  ...
+]
+```
+
+
+#### Blocks.Latest
+
+Returns the tip of the nodes best-chain
+
+Subjective to the node.
+
+``` javascript
+{
+  "blockHex": "020000003bef0d0b88737698572aa5c78 ...",
+  "blockId": "00000000000000001b701ecd0cf2b7a7742a320e9a06a506227ee345b5735d13"
+}
+```
+
+
+#### Blocks.Propagate
+
+**Parameters:** Block hex
+
+``` javascript
+No response body
+```
+
+
+#### Blocks.Transactions
+
+**Parameters:** Array of block ids (big-endian block hashes)
+
+Idempotent.
+
+``` javascript
+[
+  {
+    blockId: "00000000000000001b701ecd0cf2b7a7742a320e9a06a506227ee345b5735d13",
+    txId: "c7736a0a0046d5a8cc61c8c3c2821d4d7517f5de2bc66a966011aaa79965ffba"
+  },
+  ...
+]
+```
+
+
 ### Transactions
 
 #### Transactions.Get
@@ -142,65 +201,6 @@ Subjective to the node.
   {
     blockId: null,
     txId: "a0ff943d3f644d8832b1fa74be4d0ad2577615dc28a7ef74ff8c271b603a082a"
-  },
-  ...
-]
-```
-
-
-### Blocks
-
-#### Blocks.Get
-
-**Parameters:** Array of block ids
-
-Idempotent.
-
-``` javascript
-[
-  {
-    "blockHex": "020000003bef0d0b88737698572aa5c78 ...",
-    "blockId": "00000000000000001b701ecd0cf2b7a7742a320e9a06a506227ee345b5735d13"
-  }
-  ...
-]
-```
-
-
-#### Blocks.Latest
-
-Returns the tip of the nodes best-chain
-
-Subjective to the node.
-
-``` javascript
-{
-  "blockHex": "020000003bef0d0b88737698572aa5c78 ...",
-  "blockId": "00000000000000001b701ecd0cf2b7a7742a320e9a06a506227ee345b5735d13"
-}
-```
-
-
-#### Blocks.Propagate
-
-**Parameters:** Block hex
-
-``` javascript
-No response body
-```
-
-
-#### Blocks.Transactions
-
-**Parameters:** Array of block ids (big-endian block hashes)
-
-Idempotent.
-
-``` javascript
-[
-  {
-    blockId: "00000000000000001b701ecd0cf2b7a7742a320e9a06a506227ee345b5735d13",
-    txId: "c7736a0a0046d5a8cc61c8c3c2821d4d7517f5de2bc66a966011aaa79965ffba"
   },
   ...
 ]
