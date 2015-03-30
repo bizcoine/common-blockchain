@@ -122,20 +122,23 @@ Returns the Array of propagated transaction ids (big-endian transaction hashes)
 ```
 
 
-#### Transactions.Summary
+#### Transactions.Status
 
 **Parameters:** Array of transaction ids (big-endian transaction hashes)
+
+Subjective to the node.
 
 ``` javascript
 [
   {
-    txId: "c7736a0a0046d5a8cc61c8c3c2821d4d7517f5de2bc66a966011aaa79965ffba",
-    blockId: "00000000000000001b701ecd0cf2b7a7742a320e9a06a506227ee345b5735d13",
     blockHeight: 318573,
-    nInputs: 2,
-    nOutputs: 7,
-    totalInputValue: 130000,
-    totalOutputValue: 100000
+    blockId: "00000000000000001b701ecd0cf2b7a7742a320e9a06a506227ee345b5735d13",
+    txId: "c7736a0a0046d5a8cc61c8c3c2821d4d7517f5de2bc66a966011aaa79965ffba"
+  },
+  {
+    blockHeight: null,
+    blockId: null,
+    txId: "a0ff943d3f644d8832b1fa74be4d0ad2577615dc28a7ef74ff8c271b603a082a"
   },
   ...
 ]

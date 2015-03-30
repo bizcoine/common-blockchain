@@ -57,13 +57,9 @@
       }
     ],
     "propagate": "String",
-    "summary": {
+    "status": {
       "blockHeight": "?Number",
       "blockId": "?String",
-      "nInputs": "Number",
-      "nOutputs": "Number",
-      "totalInputValue": "Number",
-      "totalOutputValue": "Number",
       "txId": "String"
     }
   }
