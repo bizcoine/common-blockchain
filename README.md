@@ -122,15 +122,10 @@ Subjective to the node.
 
 #### Transactions.Propagate
 
-**Parameters:** Array of transaction hex strings in the bitcoin protocol format.
-
-Returns the Array of propagated transaction ids (big-endian transaction hashes)
+**Parameters:** Transaction hex
 
 ``` javascript
-[
-  "c7736a0a0046d5a8cc61c8c3c2821d4d7517f5de2bc66a966011aaa79965ffba",
-  ...
-]
+No response body
 ```
 
 
