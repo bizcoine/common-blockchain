@@ -36,17 +36,13 @@
     "propagate": {},
     "transactions": [
       {
-        "blockHeight": "Number",
         "blockId": "String",
-        "txHex": "String",
         "txId": "String"
       }
     ]
   },
   "transactions": {
     "get": {
-      "blockHeight": "?Number",
-      "blockId": "?String",
       "txHex": "String",
       "txId": "String"
     },
@@ -58,7 +54,6 @@
     ],
     "propagate": {},
     "status": {
-      "blockHeight": "?Number",
       "blockId": "?String",
       "txId": "String"
     }
