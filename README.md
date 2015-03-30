@@ -20,7 +20,9 @@ To convert between BTC and satoshis, see the [proper money handling page on the 
 **Parameters**: Array of addresses
 
 Returns an array of address summaries.
-Each summary must not disclude unconfirmed transactions from its information.
+Summaries must not exclude statistics from unconfirmed transactions.
+
+Subjective to the node.
 
 ``` javascript
 [
@@ -39,7 +41,10 @@ Each summary must not disclude unconfirmed transactions from its information.
 
 **Parameters**: Array of addresses, (optional) minimum block hash/height
 
-Returns a array of transactions related to this Address (as an input or output).  Optionally filtered by a minimum block hash/height.
+Returns a array of transactions related to this Address (as an input or output).
+Optionally filtered by a minimum block hash/height.
+
+Block information is subjective to the node.
 
 ``` javascript
 [
@@ -59,6 +64,9 @@ Returns a array of transactions related to this Address (as an input or output).
 **Parameters:** Array of addresses
 
 Returns a array of unspents transaction outputs, combined with the vout, value and related address.
+Unspents will include unconfirmed, unspent transactions outputs.
+
+Subjective to the node.
 
 ``` javascript
 [
@@ -80,6 +88,8 @@ Returns a array of unspents transaction outputs, combined with the vout, value a
 
 **Parameters:** Array of transaction ids (big-endian transaction hashes)
 
+Block information is subjective to the node.
+
 ``` javascript
 [
   {
@@ -95,7 +105,9 @@ Returns a array of unspents transaction outputs, combined with the vout, value a
 
 #### Transactions.Latest
 
-Returns the latest unconfirmed transactions (subjective to the node)
+Returns the latest unconfirmed transactions
+
+Subjective to the node.
 
 ``` javascript
 [
@@ -149,7 +161,7 @@ Subjective to the node.
 
 #### Blocks.Get
 
-**Parameters:** Array of block ids and/or block heights
+**Parameters:** Array of block ids
 
 ``` javascript
 [
@@ -187,9 +199,9 @@ No response body
 
 #### Blocks.Transactions
 
-**Parameters:** Array of block ids and/or block heights (big-endian block hashes)
+**Parameters:** Array of block ids (big-endian block hashes)
 
-Returns the list of transactions in those blocks
+Returns the transactions in those blocks
 
 ``` javascript
 [
