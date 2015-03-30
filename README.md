@@ -177,6 +177,25 @@ Subjective to the node.
 ```
 
 
+#### Transactions.Outputs
+
+**Parameters:** Array of `{ txId: "String", vout: "Number" }`
+
+Idempotent.
+
+``` javascript
+[
+	{
+		scriptPubKey: "61b469ada61f37c620010912a9d5d56646015f16",
+		txId: "c7736a0a0046d5a8cc61c8c3c2821d4d7517f5de2bc66a966011aaa79965ffba",
+		value: 10505,
+		vout: 0
+	},
+	...
+]
+```
+
+
 #### Transactions.Propagate
 
 **Parameters:** Transaction hex

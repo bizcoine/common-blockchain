@@ -52,6 +52,12 @@
         "txId": "String"
       }
     ],
+    "outputs": {
+      "scriptPubKey": "String",
+      "txId": "String",
+      "value": "Number",
+      "vout": "Number"
+    },
     "propagate": {},
     "status": {
       "blockId": "?String",
