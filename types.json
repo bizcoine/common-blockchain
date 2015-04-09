@@ -6,6 +6,9 @@
           "String"
         ]
       },
+      "errors": {
+        "badAddress": "{{address}} is not a valid {{network}} address"
+      },
       "expected": [
         {
           "address": "String",
@@ -22,6 +25,11 @@
         ],
         "blockHeight": "?Number"
       },
+      "errors": {
+        "badAddress": "{{address}} is not a valid {{network}} address",
+        "badBlockId": "{{blockId}} is not a valid 256-bit big-endian hash",
+        "unknownBlockId": "Unknown blockId: {{blockId}}, it may have been orphaned"
+      },
       "expected": [
         {
           "blockId": "?String",
@@ -34,6 +42,9 @@
         "addresses": [
           "String"
         ]
+      },
+      "errors": {
+        "badAddress": "{{address}} is not a valid {{network}} address"
       },
       "expected": [
         {
@@ -53,6 +64,10 @@
           "String"
         ]
       },
+      "errors": {
+        "badBlockId": "{{blockId}} is not a valid 256-bit big-endian hash",
+        "unknownBlockId": "Unknown blockId: {{blockId}}, it may have been orphaned"
+      },
       "expected": [
         {
           "blockHeight": "Number",
@@ -63,11 +78,16 @@
     },
     "latest": {
       "arguments": {},
+      "errors": {},
       "expected": "String"
     },
     "propagate": {
       "arguments": {
         "blockHex": "String"
+      },
+      "errors": {
+        "badBlockHex": "Invalid blockHex",
+        "rejected": "Block rejected: {{reason}}"
       },
       "expected": {}
     },
@@ -76,6 +96,10 @@
         "blockIds": [
           "String"
         ]
+      },
+      "errors": {
+        "badBlockId": "{{blockId}} is not a valid 256-bit big-endian hash",
+        "unknownBlockId": "Unknown blockId: {{blockId}}, it may have been orphaned"
       },
       "expected": [
         {
@@ -92,6 +116,10 @@
           "String"
         ]
       },
+      "errors": {
+        "badTxId": "{{txId}} is not a valid 256-bit big-endian hash",
+        "unknownTxId": "Unknown txId: {{txId}}, it may have been lost"
+      },
       "expected": [
         {
           "txHex": "String",
@@ -101,6 +129,7 @@
     },
     "latest": {
       "arguments": {},
+      "errors": {},
       "expected": [
         "String"
       ]
@@ -113,6 +142,11 @@
             "vout": "Number"
           }
         ]
+      },
+      "errors": {
+        "badTxId": "{{txId}} is not a valid 256-bit big-endian hash",
+        "badVout": "{{txId}} does not have a vout of {{vout}}",
+        "unknownTxId": "Unknown txId: {{txId}}, it may have been lost"
       },
       "expected": [
         {
@@ -127,6 +161,10 @@
       "arguments": {
         "txHex": "String"
       },
+      "errors": {
+        "badTxHex": "Invalid txHex",
+        "rejected": "Transaction rejected: {{reason}}"
+      },
       "expected": {}
     },
     "status": {
@@ -134,6 +172,10 @@
         "txIds": [
           "String"
         ]
+      },
+      "errors": {
+        "badTxId": "{{txId}} is not a valid 256-bit big-endian hash",
+        "unknownTxId": "Unknown txId: {{txId}}, it may have been lost"
       },
       "expected": [
         {
