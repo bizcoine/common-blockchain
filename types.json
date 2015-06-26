@@ -24,21 +24,21 @@
         ],
         "blockHeight": "?Number"
       },
-      "expected": 
-        [
-          {"txid": 
-            [  
-              {
-                "blockHeight": "?Number",
-                "blockId": "?String",
-                "hex": "String",
-                "txHex": "String",
-                "txid": "String",
-                "txId": "String"
-              }
-            ] 
-          }
-        ]
+      "expected": [
+        {
+          "addresses": "String",
+          "result": [  
+            {
+              "blockHeight": "?Number",
+              "blockId": "?String",
+              "hex": "String",
+              "txHex": "String",
+              "txid": "String",
+              "txId": "String"
+            }
+          ]
+        }
+      ]
     },
     "unspents": {
       "arguments": {
@@ -48,14 +48,19 @@
       },
       "expected": [
         {
-          "address": "String",
-          "confirmations": "Number",
-          "txid": "String",
-          "txId": "String",
-          "value": "Number",
-          "amount": "Number",
-          "vout": "Number",
-          "scriptPubKey": "String"
+          "addresses": "String",
+          "result": [  
+            {
+              "address": "String",
+              "confirmations": "Number",
+              "txid": "String",
+              "txId": "String",
+              "value": "Number",
+              "amount": "Number",
+              "vout": "Number",
+              "scriptPubKey": "String"
+            }
+          ]
         }
       ]
     }
