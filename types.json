@@ -11,6 +11,7 @@
           "address": "String",
           "balance": "Number",
           "totalReceived": "Number",
+          "totalSent": "Number",
           "txCount": "Number"
         }
       ]
@@ -27,7 +28,7 @@
           "blockHeight": "?Number",
           "blockId": "?String",
           "txHex": "String",
-          "txId": "String"
+          "txId": "String",
         }
       ]
     },
@@ -42,8 +43,11 @@
           "address": "String",
           "confirmations": "Number",
           "txId": "String",
+          "txid": "String",
           "value": "Number",
-          "vout": "Number"
+          "amount": "Number",
+          "vout": "Number",
+          "scriptPubKey": "String"
         }
       ]
     }
@@ -99,7 +103,48 @@
       "expected": [
         {
           "txHex": "String",
-          "txId": "String"
+          "hex" : "String",
+          "txId": "String",
+          "txid": "String",
+          "version": "Number",
+          "locktime": "Number",
+          "fee": "Number",
+          "vin": [
+           {
+             "txid": "String",
+             "vout": "Number", 
+            "scriptSig": 
+            {
+              "asm": "String",
+              "hex": "String"
+            },
+            "sequence": "Number" 
+
+           }
+           ],
+          "vout":[
+          {
+            "value": "Number",
+            "index": "Number",
+            "spentTxid": "not provided",
+            "scriptPubKey":
+            {
+              "asm": "String",
+              "hex": "String",
+              "reqSigs": "Number",
+              "type": "String",
+              "addresses": [
+                "String"
+              ]
+              
+            }
+          }
+          ],
+          "blockhash": "String",
+          "blockindex": "Number",
+          "blocktime": "Number",
+          "confirmations": "Number",
+          "timeReceived": "Number", 
         }
       ]
     },
@@ -108,7 +153,48 @@
       "expected": [
         {
           "txHex": "String",
-          "txId": "String"
+          "hex" : "String",
+          "txId": "String",
+          "txid": "String",
+          "version": "Number",
+          "locktime": "Number",
+          "fee": "Number",
+          "vin": [
+           {
+             "txid": "String",
+             "vout": "Number", 
+            "scriptSig": 
+            {
+              "asm": "String",
+              "hex": "String"
+            },
+            "sequence": "Number" 
+
+           }
+           ],
+          "vout":[
+          {
+            "value": "Number",
+            "index": "Number",
+            "spentTxid": "not provided",
+            "scriptPubKey":
+            {
+              "asm": "String",
+              "hex": "String",
+              "reqSigs": "Number",
+              "type": "String",
+              "addresses": [
+                "String"
+              ]
+              
+            }
+          }
+          ],
+          "blockhash": "String",
+          "blockindex": "Number",
+          "blocktime": "Number",
+          "confirmations": "Number",
+          "timeReceived": "Number", 
         }
       ]
     },
@@ -134,7 +220,10 @@
       "arguments": {
         "txHex": "String"
       },
-      "expected": {}
+      "expected": 
+      {
+        "txid": "String"
+      }
     },
     "status": {
       "arguments": {
