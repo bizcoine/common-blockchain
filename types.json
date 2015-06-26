@@ -4,7 +4,8 @@
       "arguments": {
         "addresses": [
           "String"
-        ]
+        ],
+        "network": "String"
       },
       "expected": [
         {
@@ -27,8 +28,10 @@
         {
           "blockHeight": "?Number",
           "blockId": "?String",
+          "hex": "String",
           "txHex": "String",
-          "txId": "String",
+          "txid": "String",
+          "txId": "String"
         }
       ]
     },
@@ -42,8 +45,8 @@
         {
           "address": "String",
           "confirmations": "Number",
-          "txId": "String",
           "txid": "String",
+          "txId": "String",
           "value": "Number",
           "amount": "Number",
           "vout": "Number",
@@ -88,6 +91,7 @@
       "expected": [
         {
           "blockId": "String",
+          "txid": "String",
           "txId": "String"
         }
       ]
@@ -96,6 +100,9 @@
   "transactions": {
     "get": {
       "arguments": {
+        "txid": [
+          "String"
+        ],
         "txIds": [
           "String"
         ]
@@ -104,41 +111,40 @@
         {
           "txHex": "String",
           "hex" : "String",
-          "txId": "String",
           "txid": "String",
+          "txId": "String",
           "version": "Number",
           "locktime": "Number",
           "fee": "Number",
           "vin": [
-           {
-             "txid": "String",
-             "vout": "Number", 
-            "scriptSig": 
             {
-              "asm": "String",
-              "hex": "String"
-            },
-            "sequence": "Number" 
-
-           }
-           ],
-          "vout":[
-          {
-            "value": "Number",
-            "index": "Number",
-            "spentTxid": "not provided",
-            "scriptPubKey":
-            {
-              "asm": "String",
-              "hex": "String",
-              "reqSigs": "Number",
-              "type": "String",
-              "addresses": [
-                "String"
-              ]
-              
+              "txid": "String",
+              "txId": "String",
+              "vout": "Number", 
+              "scriptSig": 
+              {
+                "asm": "String",
+                "hex": "String"
+              },
+              "sequence": "Number" 
             }
-          }
+          ],
+          "vout":[
+            {
+              "value": "Number",
+              "index": "Number",
+              "spentTxid": "not provided",
+              "scriptPubKey":
+              {
+                "asm": "String",
+                "hex": "String",
+                "reqSigs": "Number",
+                "type": "String",
+                "addresses": [
+                  "String"
+                ]
+              }
+            }
           ],
           "blockhash": "String",
           "blockindex": "Number",
@@ -152,26 +158,26 @@
       "arguments": {},
       "expected": [
         {
-          "txHex": "String",
           "hex" : "String",
-          "txId": "String",
+          "txHex": "String",
           "txid": "String",
+          "txId": "String",
           "version": "Number",
           "locktime": "Number",
           "fee": "Number",
           "vin": [
-           {
-             "txid": "String",
-             "vout": "Number", 
-            "scriptSig": 
             {
-              "asm": "String",
-              "hex": "String"
-            },
-            "sequence": "Number" 
-
-           }
-           ],
+              "txid": "String",
+              "txId": "String",
+              "vout": "Number", 
+              "scriptSig": 
+                {
+                  "asm": "String",
+                  "hex": "String"
+                },
+              "sequence": "Number"
+            }
+          ],
           "vout":[
           {
             "value": "Number",
@@ -186,7 +192,6 @@
               "addresses": [
                 "String"
               ]
-              
             }
           }
           ],
@@ -202,6 +207,7 @@
       "arguments": {
         "outputs": [
           {
+            "txid": "String",
             "txId": "String",
             "vout": "Number"
           }
@@ -210,6 +216,7 @@
       "expected": [
         {
           "scriptPubKey": "String",
+          "txid": "String",
           "txId": "String",
           "value": "Number",
           "vout": "Number"
@@ -218,15 +225,20 @@
     },
     "propagate": {
       "arguments": {
+        "hex": "String",
         "txHex": "String"
       },
       "expected": 
       {
-        "txid": "String"
+        "txid": "String",
+        "txId": "String"
       }
     },
     "status": {
       "arguments": {
+        "txid": [
+          "String"
+        ],
         "txIds": [
           "String"
         ]
@@ -234,6 +246,7 @@
       "expected": [
         {
           "blockId": "?String",
+          "txid": "String",
           "txId": "String"
         }
       ]
