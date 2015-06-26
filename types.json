@@ -236,7 +236,7 @@
     },
     "status": {
       "arguments": {
-        "txid": [
+        "txids": [
           "String"
         ],
         "txIds": [
