@@ -24,16 +24,21 @@
         ],
         "blockHeight": "?Number"
       },
-      "expected": [
-        {
-          "blockHeight": "?Number",
-          "blockId": "?String",
-          "hex": "String",
-          "txHex": "String",
-          "txid": "String",
-          "txId": "String"
-        }
-      ]
+      "expected": 
+        [
+          {"txid": 
+            [  
+              {
+                "blockHeight": "?Number",
+                "blockId": "?String",
+                "hex": "String",
+                "txHex": "String",
+                "txid": "String",
+                "txId": "String"
+              }
+            ] 
+          }
+        ]
     },
     "unspents": {
       "arguments": {
@@ -236,7 +241,7 @@
     },
     "status": {
       "arguments": {
-        "txid": [
+        "txids": [
           "String"
         ],
         "txIds": [
