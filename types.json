@@ -110,7 +110,7 @@
   "transactions": {
     "get": {
       "arguments": {
-        "txid": [
+        "txids": [
           "String"
         ],
         "txIds": [
