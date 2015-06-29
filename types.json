@@ -99,10 +99,15 @@
         ]
       },
       "expected": [
-        {
+        { 
           "blockId": "String",
-          "txid": "String",
-          "txId": "String"
+          "result": 
+          [
+            {
+              "txid": "String",
+              "txId": "String"
+            }
+          ]
         }
       ]
     }
