@@ -253,9 +253,6 @@
     },
     "status": {
       "arguments": {
-        "txids": [
-          "String"
-        ],
         "txIds": [
           "String"
         ]
