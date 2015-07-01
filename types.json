@@ -148,6 +148,7 @@
             {
               "value": "Number",
               "index": "Number",
+              "n": "Number",
               "spentTxid": "not provided",
               "scriptPubKey":
               {
@@ -197,6 +198,7 @@
           {
             "value": "Number",
             "index": "Number",
+            "n": "Number",
             "spentTxid": "not provided",
             "scriptPubKey":
             {
