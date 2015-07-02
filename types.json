@@ -91,6 +91,7 @@
       "expected": 
         [
           {
+            "blockId": "String",
             "txid": "String",
             "txId": "String"
           } 
