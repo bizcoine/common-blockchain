@@ -4,8 +4,7 @@
       "arguments": {
         "addresses": [
           "String"
-        ],
-        "network": "String"
+        ]
       },
       "expected": [
         {
@@ -24,21 +23,17 @@
         ],
         "blockHeight": "?Number"
       },
-      "expected": [
-        {
-          "addresses": "String",
-          "result": [  
-            {
-              "blockHeight": "?Number",
-              "blockId": "?String",
-              "hex": "String",
-              "txHex": "String",
-              "txid": "String",
-              "txId": "String"
-            }
-          ]
-        }
-      ]
+      "expected": 
+        [  
+          {
+            "blockHeight": "?Number",
+            "blockId": "?String",
+            "hex": "String",
+            "txHex": "String",
+            "txid": "String",
+            "txId": "String"
+          }
+        ]
     },
     "unspents": {
       "arguments": {
@@ -46,24 +41,19 @@
           "String"
         ]
       },
-      "expected": [
-        {
-          "addresses": "String",
-          "result": [  
-            {
-              "address": "String",
-              "confirmations": "Number",
-              "txid": "String",
-              "txId": "String",
-              "value": "Number",
-              "amount": "Number",
-              "vout": "Number",
-              "scriptPubKey": "String"
-            }
-          ]
-        }
-      ]
-    }
+      "expected": 
+        [
+          {
+            "address": "String",
+            "confirmations": "Number",
+            "txid": "String",
+            "txId": "String",
+            "value": "Number",
+            "amount": "Number",
+            "vout": "Number",
+            "scriptPubKey": "String"
+          }
+        ]
   },
   "blocks": {
     "get": {
@@ -98,27 +88,18 @@
           "String"
         ]
       },
-      "expected": [
-        { 
-          "blockId": "String",
-          "result": 
-          [
-            {
-              "txid": "String",
-              "txId": "String"
-            }
-          ]
-        }
-      ]
-    }
+      "expected": 
+        [
+          {
+            "txid": "String",
+            "txId": "String"
+          } 
+        ]
   },
   "transactions": {
     "get": {
       "arguments": {
         "txids": [
-          "String"
-        ],
-        "txIds": [
           "String"
         ]
       },
@@ -242,18 +223,17 @@
     },
     "propagate": {
       "arguments": {
-        "hex": "String",
-        "txHex": "String"
+        "hex": "String"
       },
       "expected": 
-      {
-        "txid": "String",
-        "txId": "String"
-      }
+        {
+          "txid": "String",
+          "txId": "String"
+        }
     },
     "status": {
       "arguments": {
-        "txIds": [
+        "txids": [
           "String"
         ]
       },
