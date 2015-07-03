@@ -116,7 +116,10 @@
             {
               "txid": "String",
               "txId": "String",
-              "vout": "Number", 
+              "vout": "Number",
+              "addresses": [
+                "String"
+              ],
               "scriptSig": 
               {
                 "asm": "String",
@@ -167,6 +170,9 @@
               "txid": "String",
               "txId": "String",
               "vout": "Number", 
+              "addresses": [
+                "String"
+              ],
               "scriptSig": 
                 {
                   "asm": "String",
