@@ -90,10 +90,13 @@
       },
       "expected": 
         [
-          {
-            "txid": "String",
-            "txId": "String"
-          } 
+          [
+            {
+              "blockId": "String",
+              "txid": "String",
+              "txId": "String"
+            }
+          ]
         ]
   },
   "transactions": {
